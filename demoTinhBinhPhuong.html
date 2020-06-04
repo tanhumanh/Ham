@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Square of <input type="text" id="input" oninput="caculate()"/>is<span id="result"></span>
+
+<script>
+    function square(number) {
+        let result = number*number;
+        return result;
+    }
+    function caculate() {
+        console.log(12);
+      let input= +document.getElementById("input").value;
+      let result = square(input);
+      document.getElementById("result").innerHTML= result;
+    }
+    // var squareOf2 = square(2);
+    // document.write("square of 2 is " + squareOf2 + "<br/>");
+
+</script>
+</body>
+</html>
