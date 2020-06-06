@@ -6,7 +6,58 @@
 </head>
 <body>
 <script>
-    let a = +
+    // function alertMessage(){
+    //   alert ("xin chao ");
+    // }
+    // alertMessage();BAI 1
+
+
+     // function number(b) {
+     //     b++;
+     //     return b;
+     // }
+     // let b = 1;
+     // number(b);
+     // console.log(number(b));
+    //cach 2 : let b = number(1)
+               //console.log(b);BAI 2.
+
+    // function number(a,b) {
+    //     let num ;
+    //     if( a > b){
+    //         alert("a lon hon b");
+    //     } else {
+    //         num = a + b ;
+    //         alert(num);
+    //     }
+    //
+    // }
+    //  number(3,4); BAI 3
+
+    // function addNumbers() {
+    //     firstNum = 4;
+    //     secondNum = 8;
+    //     result = firstNum + secondNum;
+    //     alert(result);
+    //     return result;
+    // }
+    // result = 0 ;
+    // result = addNumbers();//BAI 4
+
+    let star1 = ["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"];
+    let star2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    function checkStar() {
+       let name = +prompt("Nhap ten chom sao:");
+       let flag = false;
+       for (let i =0; i<star1.length; i++){
+           if (name === star1[i]){
+               alert(star2[i]);
+               flag = true;
+           }
+       }
+       if (flag == false) alert("khong co chom sao tuong ung");
+    }
+    checkStar();
 </script>
 </body>
 </html>
